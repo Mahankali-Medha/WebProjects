@@ -1,0 +1,163 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+    font-family: ProductSans;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../../jspiders/Web_Development_A26/ASSESSTS/fonts/ProductSansRegular.ttf);
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#otp_validation_container{
+    width: 40%;
+    height:40%;
+    border: 0.2vw solid black;
+    border-radius: 3vw;
+    padding: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1vh;
+    box-shadow: 0px 0px 10px black;
+    z-index: 1;
+}
+#otp_validation_heading{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+#input_box{
+    width: 80%;
+    height: 15%;
+    background-color: lightgray;
+    font-size: 1.5em;
+    border-radius: 5px;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+}
+#validation_buttons_container{
+    width: 80%;
+    height: 45%;
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+#generate_otp_button_container{
+    width: 48%;
+    background-color: green;
+    box-shadow: 5px 5px 5px green;
+}
+#validate_otp_button_container{
+    width: 48%;
+    background-color: red;
+    box-shadow: 2px 5px 5px red;
+}
+#validate_otp_button_container,#generate_otp_button_container{
+    font-size: 3vw;
+    display: flex;
+    flex-direction:column ;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#generate_otp_button_container:hover{
+    background-color: lightgreen;
+}
+#validate_otp_button_container:hover{
+    background-color: rgb(207, 91, 91);
+}
+#otp_container{
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    border-radius: 30px;
+    position: absolute;
+    z-index: 5;
+    color: white;
+    box-shadow: 0px 0px 50px black;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 15vw;
+}
+#otp_status{
+    width: 80%;
+    height: 10%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: green;
+}
+#cancel_button{
+    height: 50px;
+    width: 50px;
+    font-size: 3em;
+    padding: 20px;
+    outline: none;
+    border: none;
+    background-color: red;
+    border-radius: 30px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -150px;
+    right: -50px;
+    z-index: 5;
+    cursor: pointer;
+    transition: transform 500ms linear;
+}
+#cancel_button:hover{
+    transform: rotate(180deg);
+}
+#cancel_button:active{
+    transform: scale(0.9) rotate(180deg);
+    /* transform: rotate(180deg); */
+}
+
+/* #button{
+    width: 50%;
+    height:50%;
+    position: absolute;
+    z-index: 2;
+    background-color: black;
+    border-radius: 25px;
+    display: none   ;
+    align-items: center;
+    justify-content: center;
+}
+#cancel_button{
+    width: 50px;
+    height:50px;
+    font-size: 3em;
+    color: red;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 30px;
+    display: none;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    transition: transform 500ms linear;
+}
+#cancel_button:hover{
+    transform: rotate(180deg);
+}
+#cancel_button:active{
+    transform: scale(0.5) rotate(-180deg);
+} */

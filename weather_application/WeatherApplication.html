@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApplication</title>
+    <link rel="stylesheet" href="WeatherApplication.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="WeatherApplication.js" defer></script>
+</head>
+<body>
+    <div id="weather_forecast_container">
+        <div id="search_input_container">
+             <input type="text" name="" id="search" placeholder="Search City">
+            <span id="magnifier"><i class="fa-solid fa-magnifying-glass" id="magnifier_glass"></i></span>
+        </div>
+        <div id="location_container">
+            <span id="logo_container">
+                <i class="fa-solid fa-location-dot" id="location_icon"></i>
+            </span>
+            <div id="city_name_container">Nellore</div>
+        </div>
+        <div id="image_temperature_container">
+            <span id="weather_image">
+                <img src="../../../ASSESSTS/images/whitemountain.jpg" alt="" id="image">
+            </span>
+            <span id="weather_type">Scattered cloudy</span>
+            <span id="weather_degree_celcius">30c</span>
+        </div>
+        <div id="humidity_and_wind_container">
+            <div class="wind_humidity_containers">
+                <span id="humidity_image_container"><img src="../../../ASSESSTS/images/humidity.png" alt="" id="humidity_image"></span>
+                <span id="humidity_text">Humidity</span>
+                <span id="humidity_percentage">88%</span>
+            </div>
+            <div class="wind_humidity_containers">
+                <span id="wind_image_container">
+                    <img src="../../../ASSESSTS/images/wind2.png" alt="" id="wind_image">
+                </span>
+                <span id="wind_status">WindStatus</span>
+                <span id="wind_speed">4.33km/h</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

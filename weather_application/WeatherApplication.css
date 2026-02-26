@@ -1,0 +1,158 @@
+/* weather Forecast Application */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+    text-shadow: 0px 0px 10px black;
+    color: white;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../../ASSESSTS/images/mountsnow.jpg);
+    background-size: 150% 100%; 
+    backdrop-filter: blur(10px);   
+    overflow: hidden;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../../ASSESSTS/fonts/ProductSansRegular.ttf);
+}
+#weather_forecast_container{
+    width: 50vw;
+    height: 70vh;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0,0.6);
+}
+#search_input_container{
+    width: 100%;
+    height: 60px;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+#search{
+    background-color: black;
+    font-size: 2vw;
+    padding-left: 20px;
+    border-radius: 40px;
+    color: white;
+    height: 75%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+#search::placeholder{
+    color: white;
+}
+#magnifier_glass{
+    color: rgb(265,265,265,0.4);
+    cursor: pointer;
+}
+#magnifier_glass:active{
+    transform: scale(0.94);
+}
+#magnifier{
+    font-size: 2vw;
+    position: relative;
+    left: -6.8%;
+    bottom: -0.5vh;
+    color: gray;
+}
+#search:hover{
+    background-color: rgb(0, 0, 0,0.25);
+}
+#location_container{
+    font-size: 4vw;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-weight: bold;
+}
+#location_icon{
+    color: red;
+    font-size: 4.3vw;
+}
+#image_temperature_container{
+    /* background-color: red; */
+    font-size: 3vw;
+    height: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#weather_image{
+    width: 20%;
+    height: 80%;
+    font-size: 3vw;
+}
+#image{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 7px;
+}
+#weather_type{
+    position: relative;
+    font-size: 2.5vw;
+    /* left: -30px; */
+    font-weight: bold;
+}
+#weather_degree_celcius{
+    font-weight: bold;
+    font-size: 6vw;
+}
+#degree{
+    font-size: 2vw;
+    position: relative;
+    top: -10px;
+}
+#humidity_and_wind_container{
+    width: 95%;
+    height: 150px;
+    position: relative;
+    left: 2.5%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.wind_humidity_containers{
+    color: white;
+    width: 40%;
+    height: 90%;
+    font-size: 2vw;
+    font-weight: bold;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(265, 265, 265,0.25);
+    border-radius: 10px;
+    cursor: pointer;
+    /* backdrop-filter: blur(0px); */
+}
+#humidity_image,#wind_image{
+    height: 40px;
+    width: 40px;
+    color: wheat;
+    background-color: rgb(265, 265, 265,0.25);
+    border-radius: 30px;
+}
+.wind_humidity_containers:hover{
+    background-color: rgb(265, 265, 265,0.1);
+}
